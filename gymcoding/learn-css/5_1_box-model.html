@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Content, Padding, Margin, Border */
+        div.content{
+            background-color: rgb(208, 208, 208);
+            width: 200px;
+            height: 200px;
+            padding: 20;
+            border: 10px solid green;
+            margin: 40px;
+        }
+        span{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        div.padding {
+            border: 1px solid black;
+            padding: 20px 10px;
+        }
+        div.margin {
+            border: 1px solid red;
+            margin: 20px;
+        }
+        .shape{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+        김치볶음밥
+    </div>
+    <div class="margin">
+        계란볶음밥
+    </div>
+    <div class="shape" style="margin-bottom: 40px;"></div>
+    <div class="shape"></div>
+</body>
+</html>

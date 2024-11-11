@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Style2</title>
+    <style>
+        .html{
+            font-size: 16px;
+        }
+        .content{
+            border: 1px solid blue;
+
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .article{
+            line-height: 1.8rem;/*  줄간격 */
+            letter-spacing: 2px; /* 글자간격 */
+            word-spacing: 1px;/* 단어 간격 */
+            text-indent: 80px; /* 첫 들여쓰기 속성 */
+
+
+        }
+        .transform-case{
+            text-transform: lowercase;/* 대문자 or 소문자로 바꾸는 속성 */
+        }
+        .article > a{
+            text-decoration: none;
+        }
+        .text-shadow{
+            text-shadow: 10px 10px 1px black;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p class="content text-center">GYMCODING</p>
+        <p class="content text-right">GYMCODING</p>
+        <p class="content text-left">GYMCODING</p>
+    </section>
+    <section>
+        <p class = "article">
+            여러줄<br>
+            한국(<span class="transform-case">Korea</span><br>
+            <a href="#">근육</a><br>
+            <br>
+            이렇게 어떻게<br>
+        </p>
+    </section>
+    <sectioin>
+        <h2 class="text-shadow">짐코딩 유튜브 채널</h2>
+    </sectioin>
+    <section>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+</body>
+</html>

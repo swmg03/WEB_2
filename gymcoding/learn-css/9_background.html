@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background</title>
+        <style>
+            .red {
+                background-color: red;
+                width: 120px;
+                height: 120px;
+            }
+            .image {
+                background-image: url("..//assets/images/wave.jpg");
+                background-repeat: repeat;
+                background-position: top right;
+                width: 200px;
+                height: 400px;
+                border: 1px solid black;
+                display: inline-block;
+                overflow-y: scroll;
+            }
+            .attachment-scroll {
+                background-attachment: scroll;
+            }
+            .attachment-fixed {
+                background-attachment: fixed;
+            }
+            .attachment-local {
+                background-attachment: local;
+            }
+            .background-size {
+                width: 300px;
+                height: 300px;
+                background-image: url("../assets/images/moon.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border: 1px solid black;
+            }
+            .linear-gradient {
+                width: 500px;
+                height: 200px;
+                border: 1px solid red;
+                background: linear-gradient(to right, red 50%, yellow 80%,blue 100%);
+            }
+            .radial-gradient {
+                width: 500px;
+                height: 200px;
+                border: 1px solid blue;
+                background: radial-gradient(circle at 10% 50%, white, blue, pink, yellow);
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Background-color</h3>
+        <div class="red"></div>
+
+        <h3>background-image</h3>
+        <div class="image attachment-scroll">
+            <h4>scroll</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis ad distinctio, necessitatibus aut iure facere dolore in impedit aspernatur magni magnam. Tempora, ad commodi id veritatis voluptates impedit voluptas.
+            Exercitationem, culpa assumenda nisi perspiciatis velit officiis sint ipsa fugiat fugit nulla voluptatibus eius vel, vitae doloremque error ipsam similique corporis mollitia cumque repellendus. Neque consequuntur iure tempora provident corrupti!
+            Eos, autem. Repellat soluta aperiam possimus quibusdam aut sed dignissimos quisquam deleniti repudiandae rem veniam quidem debitis, beatae, minus quo amet quae vel autem delectus reprehenderit. Rem iusto delectus reiciendis?
+            Vel tenetur quidem, ipsa voluptatem exercitationem esse incidunt blanditiis maiores, deleniti culpa, beatae ullam perferendis quas architecto alias quaerat rerum non optio ex aspernatur saepe perspiciatis illum mollitia unde! Tempora.
+            Saepe vel deleniti quas veritatis dignissimos necessitatibus, ea explicabo alias. Necessitatibus vitae id harum rem omnis eveniet totam. Ad officia aut minus quae saepe deleniti aspernatur, architecto delectus voluptas quas.
+            Excepturi omnis ipsam libero, eos tenetur in veniam porro distinctio vero. Esse, consequatur architecto ea suscipit itaque dolor minima, libero explicabo aut id laboriosam obcaecati. Eius aspernatur nesciunt ipsum enim.
+            Consequatur perferendis, dolores dicta dignissimos ad architecto error quia voluptates quas quaerat dolorum vitae nihil, at, reiciendis cupiditate. Voluptatem saepe consequatur tempore natus eum doloremque laudantium nemo tempora laboriosam quo?
+            Alias magni quod veniam non, atque eaque similique excepturi doloribus itaque iure, officia suscipit accusantium quas aliquid ad id repellendus pariatur adipisci est. Consequuntur ducimus vel beatae fuga sequi. Sit.
+        </div>
+        <div class="image attachment-fixed">
+            <h4>fixed</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis ad distinctio, necessitatibus aut iure facere dolore in impedit aspernatur magni magnam. Tempora, ad commodi id veritatis voluptates impedit voluptas.
+            Exercitationem, culpa assumenda nisi perspiciatis velit officiis sint ipsa fugiat fugit nulla voluptatibus eius vel, vitae doloremque error ipsam similique corporis mollitia cumque repellendus. Neque consequuntur iure tempora provident corrupti!
+            Eos, autem. Repellat soluta aperiam possimus quibusdam aut sed dignissimos quisquam deleniti repudiandae rem veniam quidem debitis, beatae, minus quo amet quae vel autem delectus reprehenderit. Rem iusto delectus reiciendis?
+            Vel tenetur quidem, ipsa voluptatem exercitationem esse incidunt blanditiis maiores, deleniti culpa, beatae ullam perferendis quas architecto alias quaerat rerum non optio ex aspernatur saepe perspiciatis illum mollitia unde! Tempora.
+            Saepe vel deleniti quas veritatis dignissimos necessitatibus, ea explicabo alias. Necessitatibus vitae id harum rem omnis eveniet totam. Ad officia aut minus quae saepe deleniti aspernatur, architecto delectus voluptas quas.
+            Excepturi omnis ipsam libero, eos tenetur in veniam porro distinctio vero. Esse, consequatur architecto ea suscipit itaque dolor minima, libero explicabo aut id laboriosam obcaecati. Eius aspernatur nesciunt ipsum enim.
+            Consequatur perferendis, dolores dicta dignissimos ad architecto error quia voluptates quas quaerat dolorum vitae nihil, at, reiciendis cupiditate. Voluptatem saepe consequatur tempore natus eum doloremque laudantium nemo tempora laboriosam quo?
+            Alias magni quod veniam non, atque eaque similique excepturi doloribus itaque iure, officia suscipit accusantium quas aliquid ad id repellendus pariatur adipisci est. Consequuntur ducimus vel beatae fuga sequi. Sit.
+        </div>
+        <div class="image attachment-local">
+            <h4>local</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, officiis ad distinctio, necessitatibus aut iure facere dolore in impedit aspernatur magni magnam. Tempora, ad commodi id veritatis voluptates impedit voluptas.
+            Exercitationem, culpa assumenda nisi perspiciatis velit officiis sint ipsa fugiat fugit nulla voluptatibus eius vel, vitae doloremque error ipsam similique corporis mollitia cumque repellendus. Neque consequuntur iure tempora provident corrupti!
+            Eos, autem. Repellat soluta aperiam possimus quibusdam aut sed dignissimos quisquam deleniti repudiandae rem veniam quidem debitis, beatae, minus quo amet quae vel autem delectus reprehenderit. Rem iusto delectus reiciendis?
+            Vel tenetur quidem, ipsa voluptatem exercitationem esse incidunt blanditiis maiores, deleniti culpa, beatae ullam perferendis quas architecto alias quaerat rerum non optio ex aspernatur saepe perspiciatis illum mollitia unde! Tempora.
+            Saepe vel deleniti quas veritatis dignissimos necessitatibus, ea explicabo alias. Necessitatibus vitae id harum rem omnis eveniet totam. Ad officia aut minus quae saepe deleniti aspernatur, architecto delectus voluptas quas.
+            Excepturi omnis ipsam libero, eos tenetur in veniam porro distinctio vero. Esse, consequatur architecto ea suscipit itaque dolor minima, libero explicabo aut id laboriosam obcaecati. Eius aspernatur nesciunt ipsum enim.
+            Consequatur perferendis, dolores dicta dignissimos ad architecto error quia voluptates quas quaerat dolorum vitae nihil, at, reiciendis cupiditate. Voluptatem saepe consequatur tempore natus eum doloremque laudantium nemo tempora laboriosam quo?
+            Alias magni quod veniam non, atque eaque similique excepturi doloribus itaque iure, officia suscipit accusantium quas aliquid ad id repellendus pariatur adipisci est. Consequuntur ducimus vel beatae fuga sequi. Sit.
+        </div>
+        <h3>backgroudnd-size</h3>
+        <div class="background-size"></div>        
+        
+        <h3>linear-gradient</h3>
+        <div class="linear-gradient"></div>
+        <h3>radial-gradient</h3>
+        <div class="radial-gradient"></div>
+        <div style="height: 1000px; width: 10px; background-color: red;"></div>
+    </body>
+</html>
