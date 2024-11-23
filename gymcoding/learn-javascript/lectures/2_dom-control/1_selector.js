@@ -23,3 +23,22 @@ let itemAll = document.querySelectorAll('.item');
 console.log('itemAll: ', itemAll);
 console.log('itemAll: ', itemAll[0]);
 console.log('itemAll: ', itemAll[1]);
+
+// h2.textContent = '운동!!!';
+
+// //h2.innerHTML = '<span>운동@@@</span>';
+// document.querySelector('body').innerHTML = '<strong>운동</strong>';
+
+let input = document.querySelector('input');
+input.setAttribute('placeholder', '헬스 운동을 입력해주세요!');
+input.setAttribute('required', '');
+input.removeAttribute('placeholder');
+input.removeAttribute('required');
+
+let helloItem = document.querySelector('.hello');
+console.log(helloItem);
+// helloItem.style.color = 'blue';
+// helloItem.style.backgroundcolor = 'black';
+
+helloItem.classList.add('dark', 'one');
+helloItem.classList.remove('one');
