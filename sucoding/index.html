@@ -145,5 +145,151 @@
         <label for="apple">사과</label><br />
       </fieldset>
     </form>
+
+    <!-- 표 만들기: table 태그-->
+    <table>
+      <caption>
+        음료 가격
+      </caption>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td>1,000원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+        <td>1,000원</td>
+      </tr>
+    </table>
+    <br />
+    <!--rowspan, colspan 속성-->
+    <table>
+      <caption>
+        총 금액까지 포함 음료 가격
+      </caption>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1.000원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+      </tr>
+      <tr>
+        <td>총 금액</td>
+        <td colspan="3">6,500원</td>
+      </tr>
+    </table>
+    <br />
+    <!--thead, tfoot, tbogy 적용한 표 만들기 -->
+    <table>
+      <caption>
+        총 금액까지 포함 음료 가격
+      </caption>
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>상품명</th>
+          <th>수량</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>총 금액</td>
+          <td colspan="3">6,500원</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>콜라</td>
+          <td>1개</td>
+          <td>1,500원</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>사이다</td>
+          <td>2개</td>
+          <td rowspan="2">1.000원</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>탄산수</td>
+          <td>3개</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table>
+      <caption>
+        col, colgroup 실습
+      </caption>
+      <col style="width: 80px" />
+      <colgroup span="2" style="width: 150px"></colgroup>
+      <col style="width: 100px" />
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+    </table>
+    <br />
+
+    <!-- scope 속성  실습 -->
+    <table>
+      <tr>
+        <th scope="col">구분</th>
+        <th scope="col">중간고사</th>
+        <th scope="col">기말고사</th>
+      </tr>
+      <tr>
+        <th scope="row">전공</th>
+        <td>A+</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <th scope="row">교양</th>
+        <td>A+</td>
+        <td>A+</td>
+      </tr>
+    </table>
+    <br />
+    <!-- audio, video 태그 -->
+    <audio src="" controls></audio>
+    <br />
+    <video src="" controls></video>
   </body>
 </html>
