@@ -3,53 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML 필수 태그 - 시멘틱 태그 실습</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS 적용하기: 외부 스타일 시트</title>
   </head>
   <body>
-    <!-- 헤더 -->
-    <header>
-      <h1>내 블로그</h1>
-      <p>프론트엔드 개발을 배우는 중</p>
-    </header>
-
-    <!-- 네비게이션 -->
-    <nav>
-      <ul>
-        <li><a href="#">홈</a></li>
-        <li><a href="#">소개</a></li>
-        <li><a href="#">연락하기</a></li>
-      </ul>
-    </nav>
-
-    <!-- 본문 영역 -->
-    <main>
-      <!-- 주요 글 -->
-      <article>
-        <h2>첫 번째 블로그 글</h2>
-        <p>HTML 시멘틱 태그에 대해 배우고 있습니다.</p>
-        <section>
-          <h3>시멘틱 태그란?</h3>
-          <p>시멘틱 태그는 HTML 문서의 의미를 명확하게 전달하는 태그입니다.</p>
-        </section>
-        <section>
-          <h3>왜 중요할까?</h3>
-          <p>검색 엔진 최적화(SEO)와 접근성을 높이기 위해 중요합니다.</p>
-        </section>
-      </article>
-
-      <!-- 사이드바 -->
-      <aside>
-        <h3>관련 글</h3>
+    <h1 class="one">외부 스타일 시트</h1>
+    <h2 style="font-size: 24px; color: red">인라인 스타일</h2>
+    <p id="title" class="two">아이디 선택자</p>
+    <p title="only">기본 속성 선택자</p>
+    <h3 class="box">
+      부모
+      <p>자식</p>
+      <div>
+        <p>Lorem.</p>
         <ul>
-          <li><a href="#">CSS Flexbox 배우기</a></li>
-          <li><a href="#">JavaScript 기초 정리</a></li>
+          <li>
+            <p>lorem1</p>
+          </li>
+          <li>
+            <p>lorem2</p>
+          </li>
+          <li>
+            <p>lorem3</p>
+          </li>
         </ul>
-      </aside>
-    </main>
+      </div>
+      <p>lorem 4</p>
+    </h3>
+    <h4 class="three">Lorem, ipsum.</h4>
 
-    <!-- 푸터 -->
-    <footer>
-      <p>© 2025 내 블로그. 모든 권리 보유.</p>
-    </footer>
+    <a href="https://www.naver.com/">네이버</a>
+    <br />
+    <a href="https://www.google.com/">구글</a>
+    <p class="four">테스트</p>
+
+    <form action="#">
+      <input type="text" /><br />
+      <input type="checkbox" checked />
+      <p>하이</p>
+    </form>
+    <button>활성화</button>
+    <button disabled>비활성화</button>
   </body>
 </html>

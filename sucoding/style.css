@@ -1,0 +1,64 @@
+h1 {
+  color: red;
+}
+
+#title {
+  color: blue;
+}
+
+.one {
+  font-size: 5px;
+}
+
+.two {
+  font-size: 50px;
+}
+
+p[title] {
+  text-align: center;
+}
+
+.box > p {
+  color: green;
+}
+
+div p {
+  color: pink;
+}
+
+h4::before {
+  content: '<before>';
+}
+
+h4::after {
+  content: '<after>';
+  color: red;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+p.four:hover {
+  color: gray;
+}
+
+p.four:active {
+  font-size: 50px;
+}
+
+input:focus {
+  color: red;
+}
+
+input:checked + p {
+  font-size: 50px;
+}
+
+button:disabled {
+  background-color: red;
+}
