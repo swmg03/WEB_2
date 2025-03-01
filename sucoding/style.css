@@ -1,64 +1,52 @@
 h1 {
-  color: red;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: normal;
 }
+/*
+p {color: red;}
+p {color: blue;}
+p {color: orange;}
 
-#title {
+*/
+.title {
   color: blue;
+} /*0010*/
+h2 {
+  color: rgb(68, 51, 195);
+} /*0001*/
+
+div {
+  color: rgba(130, 89, 48, 0.5);
 }
 
-.one {
-  font-size: 5px;
+.parent {
+  font-size: 16px;
 }
 
-.two {
-  font-size: 50px;
+.child {
+  font-size: 2em;
 }
 
-p[title] {
-  text-align: center;
+.child-to-child {
+  font-size: 2em;
 }
+/*
+<rem>
+1rem은 16px과 같다
 
-.box > p {
-  color: green;
-}
+1rem이라면 16 * 1rem = 16px
+2rem이라면 16 * 2rem = 32px
 
-div p {
-  color: pink;
-}
+<vw>
+기준 뷰포트 너비: 900px
 
-h4::before {
-  content: '<before>';
-}
+1vw -> 900px * 1/100 = 9px
+2vw -> 900px * 2/100 = 18px
 
-h4::after {
-  content: '<after>';
-  color: red;
-}
+<vh>
+기준 뷰포트 높이: 400px
 
-a:link {
-  color: green;
-}
-
-a:visited {
-  color: red;
-}
-
-p.four:hover {
-  color: gray;
-}
-
-p.four:active {
-  font-size: 50px;
-}
-
-input:focus {
-  color: red;
-}
-
-input:checked + p {
-  font-size: 50px;
-}
-
-button:disabled {
-  background-color: red;
-}
+1vw -> 400px * 1/100 = 4px
+2vw -> 400px * 2/100 = 8px
+*/

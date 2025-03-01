@@ -1,48 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>CSS 적용하기: 외부 스타일 시트</title>
+    <title>CSS 특징</title>
   </head>
   <body>
-    <h1 class="one">외부 스타일 시트</h1>
-    <h2 style="font-size: 24px; color: red">인라인 스타일</h2>
-    <p id="title" class="two">아이디 선택자</p>
-    <p title="only">기본 속성 선택자</p>
-    <h3 class="box">
-      부모
-      <p>자식</p>
-      <div>
-        <p>Lorem.</p>
-        <ul>
-          <li>
-            <p>lorem1</p>
-          </li>
-          <li>
-            <p>lorem2</p>
-          </li>
-          <li>
-            <p>lorem3</p>
-          </li>
-        </ul>
-      </div>
-      <p>lorem 4</p>
-    </h3>
-    <h4 class="three">Lorem, ipsum.</h4>
+    <!-- 적용 우선순위와 개별성-->
+    <h1>h1 tag</h1>
+    <p>specificity</p>
 
-    <a href="https://www.naver.com/">네이버</a>
-    <br />
-    <a href="https://www.google.com/">구글</a>
-    <p class="four">테스트</p>
+    <h2 class="title">h2</h2>
 
-    <form action="#">
-      <input type="text" /><br />
-      <input type="checkbox" checked />
-      <p>하이</p>
-    </form>
-    <button>활성화</button>
-    <button disabled>비활성화</button>
+    <!-- !important 다른 선택자를 모두 압도하고 이 스타일이 우선 적용된다 -->>
+     
+    <div>
+      <h4>inherit</h4>
+    </div>
+
+    <p class="parent">
+      1
+      <p class="child">
+        2
+        <p class="child-to-child">
+          3
+        </p>
+      </p>
+    </p>
   </body>
 </html>
