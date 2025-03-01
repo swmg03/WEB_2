@@ -1,29 +1,39 @@
-p.first {
-  margin-bottom: 20px;
-}
-
-p.second {
-  margin-top: 30px;
-}
-
-h1 {
-  border: 1px solid red;
-}
-
-/*두께 스타일 색상*/
-
-h2 {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* 
-auto는 100px로 지정 */
-
-div {
+div.first {
   width: 100px;
   height: 100px;
-  padding: 10px;
+  background-color: blue;
+}
+
+div.second {
+  width: 100px;
+  height: 200px;
   border: 1px solid black;
-  margin: 10px;
-  box-sizing: border-box;
+  background-image: url('/sucoding/coffee.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.third {
+  width: 200px;
+  height: 200px;
+  background-image: url('/sucoding/coffee.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  height: 1000px;
+}
+
+.parent {
+  width: 320px;
+  height: 240px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.children {
+  height: 2000px;
+  background-image: url('/sucoding/coffee.jpg');
+  background-attachment: fixed;
 }
