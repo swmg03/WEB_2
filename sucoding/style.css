@@ -1,36 +1,29 @@
-h1 {
-  font-family: serif;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  text-decoration: underline;
+p.first {
+  margin-bottom: 20px;
 }
+
+p.second {
+  margin-top: 30px;
+}
+
+h1 {
+  border: 1px solid red;
+}
+
+/*두께 스타일 색상*/
 
 h2 {
-  font-size: 30px;
-  line-height: 200%;
-  font-weight: normal;
-  font-style: oblique;
-  text-decoration: overline;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* 
+auto는 100px로 지정 */
 
-p.variant {
-  font-size: 30px;
-  line-height: 1.5;
-  font-variant: small-caps;
-  color: purple;
-  text-decoration: line-through;
-}
-
-p.text-align {
-  font-size: 20px;
-  line-height: normal;
-  text-align: justify;
-  letter-spacing: 16px; /*normal은 웹브라우저에서 정한 기본값 적용*/
-}
-
-a {
-  font-size: 30px;
-  line-height: 2;
-  text-decoration: none;
+div {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  box-sizing: border-box;
 }
